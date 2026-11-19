@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawbot Studio - CNC Pen Plotter Software & Vectorizer</title>
+  <meta name="description" content="Download Drawbot Studio for Windows. Professional image-to-GCode controller for GRBL CNC pen plotters with true centerline vectorization and automatic updates.">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>:root{--bg:#070a13;--bg-surface:#0d1322;--card-bg:#121a2d;--card-border:#1f2c4a;--card-hover-border:#384b77;--text-main:#f8fafc;--text-muted:#94a3b8;--text-subtle:#64748b;--accent:#f97316;--accent-hover:#ea580c;--accent-glow:#f9731638;--accent-cyan:#38bdf8;--success:#10b981;--radius:12px}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background-color:var(--bg);color:var(--text-main);-webkit-font-smoothing:antialiased;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;overflow-x:hidden}.glow-sphere{pointer-events:none;z-index:0;background:radial-gradient(circle,#f973161f 0%,#38bdf80a 40%,#0000 70%);width:1000px;height:600px;position:absolute;top:0;left:50%;transform:translate(-50%)}header{-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);z-index:100;background:#070a13d9;border-bottom:1px solid #ffffff12;width:100%;position:sticky;top:0}.nav-container{justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:16px 28px;display:flex}.brand{color:var(--text-main);letter-spacing:-.02em;align-items:center;gap:12px;font-size:1.25rem;font-weight:800;text-decoration:none;display:flex}.brand img{border-radius:8px;width:32px;height:32px}.brand-tag{color:var(--accent);background:#f973161f;border:1px solid #f973164d;border-radius:6px;padding:2px 8px;font-size:.75rem;font-weight:700}nav{align-items:center;gap:32px;display:flex}nav a{color:var(--text-muted);font-size:.92rem;font-weight:500;text-decoration:none;transition:color .2s}nav a:hover{color:var(--text-main)}.btn{cursor:pointer;white-space:nowrap;border:1px solid #0000;border-radius:10px;justify-content:center;align-items:center;gap:10px;padding:12px 24px;font-size:.95rem;font-weight:600;text-decoration:none;transition:all .2s;display:inline-flex}.btn-primary{background:var(--accent);color:#fff;box-shadow:0 4px 20px var(--accent-glow)}.btn-primary:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 6px 28px #f9731659}.btn-secondary{color:var(--text-main);background:#ffffff0d;border-color:#ffffff1f}.btn-secondary:hover{background:#ffffff17;border-color:#ffffff40}.btn-sm{border-radius:8px;padding:8px 16px;font-size:.88rem}.hero{text-align:center;z-index:1;max-width:1080px;margin:80px auto 60px;padding:0 24px;position:relative}.hero-badge{color:var(--accent);background:#f973161a;border:1px solid #f973164d;border-radius:24px;align-items:center;gap:10px;margin-bottom:28px;padding:6px 16px;font-size:.82rem;font-weight:600;display:inline-flex}.pulse-dot{background:var(--accent);width:7px;height:7px;box-shadow:0 0 10px var(--accent);border-radius:50%}.hero h1{letter-spacing:-.04em;background:linear-gradient(#fff 45%,#94a3b8 100%);-webkit-text-fill-color:transparent;-webkit-background-clip:text;margin-bottom:24px;font-size:3.8rem;font-weight:900;line-height:1.1}.hero p.lead{color:var(--text-muted);max-width:740px;margin:0 auto 40px;font-size:1.25rem;font-weight:400;line-height:1.6}.download-card{border:1px solid var(--card-border);background:linear-gradient(#121a2df2,#0d1322f2);border-radius:20px;max-width:620px;margin:0 auto 36px;padding:40px 36px;position:relative;box-shadow:0 20px 50px #00000080,0 0 40px #f9731614}.download-btn-main{background:var(--accent);color:#fff;border-radius:12px;justify-content:space-between;align-items:center;padding:18px 28px;font-size:1.15rem;font-weight:700;text-decoration:none;transition:all .2s;display:flex;box-shadow:0 6px 24px #f9731659}.download-btn-main:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 8px 32px #f9731680}.btn-text-block{text-align:left}.btn-subtitle{opacity:.88;margin-top:2px;font-size:.78rem;font-weight:400}.btn-arrow{font-size:1.5rem;font-weight:700}.portable-link-row{color:var(--text-muted);border-top:1px solid #ffffff14;justify-content:center;align-items:center;gap:12px;margin-top:20px;padding-top:18px;font-size:.9rem;display:flex}.portable-link-row a{color:var(--accent);font-weight:600;text-decoration:none;transition:color .2s}.portable-link-row a:hover{color:var(--text-main);text-decoration:underline}.trust-badges{color:var(--text-subtle);flex-wrap:wrap;justify-content:center;gap:24px;margin-top:24px;font-size:.82rem;display:flex}.trust-item{align-items:center;gap:6px;display:flex}.mockup-container{perspective:1200px;max-width:1040px;margin:40px auto 100px;padding:0 20px}.app-window{text-align:left;background:#0e1526;border:1px solid #283759;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px #000000b3,0 0 60px #38bdf814}.window-titlebar{background:#141c30;border-bottom:1px solid #ffffff12;justify-content:space-between;align-items:center;padding:12px 18px;display:flex}.window-dots{gap:7px;display:flex}.dot{border-radius:50%;width:11px;height:11px}.dot-red{background:#ef4444}.dot-yellow{background:#f59e0b}.dot-green{background:#10b981}.window-title{color:var(--text-muted);font-family:Fira Code,monospace;font-size:.82rem}.window-badge{color:#10b981;background:#10b98126;border:1px solid #10b9814d;border-radius:4px;padding:2px 8px;font-size:.72rem;font-weight:700}.window-body{background:#090e1c;grid-template-columns:280px 1fr;min-height:480px;display:grid}.window-sidebar{background:#0e1526;border-right:1px solid #ffffff0f;flex-direction:column;gap:18px;padding:20px;font-size:.85rem;display:flex}.sidebar-block{background:#ffffff05;border:1px solid #ffffff14;border-radius:8px;padding:14px}.sidebar-label{text-transform:uppercase;color:var(--text-subtle);letter-spacing:.05em;margin-bottom:8px;font-size:.72rem;font-weight:700}.sidebar-val{color:var(--accent-cyan);font-family:Fira Code,monospace;font-size:.85rem}.window-canvas{background-image:radial-gradient(circle,#ffffff0d 1px,#0000 1px);background-size:24px 24px;flex-direction:column;justify-content:center;align-items:center;padding:30px;display:flex;position:relative}.paper-sheet{background:#fff;border-radius:6px;justify-content:center;align-items:center;width:440px;height:310px;padding:24px;display:flex;position:relative;box-shadow:0 10px 30px #00000080}.canvas-hud{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);background:#0e1526eb;border:1px solid #ffffff1a;border-radius:8px;justify-content:space-between;align-items:center;padding:12px 18px;font-family:Fira Code,monospace;font-size:.8rem;display:flex;position:absolute;bottom:20px;left:20px;right:20px}.section{max-width:1140px;margin:100px auto;padding:0 24px;position:relative}.section-header{text-align:center;margin-bottom:56px}.section-eyebrow{text-transform:uppercase;color:var(--accent);letter-spacing:.08em;margin-bottom:10px;font-size:.82rem;font-weight:700}.section-title{letter-spacing:-.03em;margin-bottom:14px;font-size:2.4rem;font-weight:800}.section-subtitle{color:var(--text-muted);max-width:660px;margin:0 auto;font-size:1.1rem;line-height:1.6}.comparison-table-wrapper{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;margin-bottom:60px;overflow-x:auto}table.comparison-table{border-collapse:collapse;text-align:left;width:100%;font-size:.92rem}table.comparison-table th,table.comparison-table td{border-bottom:1px solid #ffffff0f;padding:18px 24px}table.comparison-table th{color:var(--text-main);background:#ffffff08;font-size:.95rem;font-weight:700}table.comparison-table tr:last-child td{border-bottom:none}.highlight-cell{color:var(--accent);background:#f973160f;font-weight:700}.process-grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;display:grid}.process-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;padding:32px 24px;transition:all .2s;position:relative}.process-card:hover{border-color:var(--card-hover-border);transform:translateY(-3px)}.process-tag{color:var(--accent);background:#f973161f;border-radius:6px;margin-bottom:18px;padding:4px 10px;font-size:.78rem;font-weight:800;display:inline-block}.process-card h3{margin-bottom:10px;font-size:1.2rem;font-weight:700}.process-card p{color:var(--text-muted);font-size:.92rem;line-height:1.6}.grid-3{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;display:grid}.feature-box{background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;padding:32px 26px;transition:all .2s}.feature-box:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 10px 30px #0000004d}.feature-icon-bubble{width:44px;height:44px;color:var(--accent);background:#f973161a;border:1px solid #f973164d;border-radius:10px;justify-content:center;align-items:center;margin-bottom:20px;font-size:1.1rem;font-weight:800;display:flex}.feature-box h3{margin-bottom:10px;font-size:1.18rem;font-weight:700}.feature-box p{color:var(--text-muted);font-size:.92rem;line-height:1.6}.update-callout{background:linear-gradient(135deg,#f973161f,#38bdf814);border:1px solid #f973164d;border-radius:20px;grid-template-columns:1fr auto;align-items:center;gap:40px;margin:80px 0;padding:48px 40px;display:grid}.update-callout h2{letter-spacing:-.02em;margin-bottom:12px;font-size:1.85rem;font-weight:800}.update-callout p{color:var(--text-muted);font-size:1.02rem;line-height:1.6}.update-pill{color:#10b981;white-space:nowrap;background:#10b98126;border:1px solid #10b98166;border-radius:10px;padding:12px 24px;font-size:.95rem;font-weight:700}.hardware-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;padding:28px}.hardware-card h3{margin-bottom:8px;font-size:1.15rem;font-weight:700}.hardware-card p{color:var(--text-muted);font-size:.9rem;line-height:1.55}.driver-box{background:var(--card-bg);border:1px solid var(--card-border);border-radius:14px;flex-direction:column;justify-content:space-between;padding:28px;display:flex}.driver-box h4{margin-bottom:8px;font-size:1.1rem;font-weight:700}.driver-box p{color:var(--text-muted);margin-bottom:20px;font-size:.88rem;line-height:1.5}.faq-grid{grid-template-columns:repeat(auto-fit,minmax(460px,1fr));gap:20px;display:grid}.faq-item{background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:24px 28px}.faq-item h4{margin-bottom:8px;font-size:1.05rem;font-weight:700}.faq-item p{color:var(--text-muted);font-size:.9rem;line-height:1.6}.final-cta{background:linear-gradient(180deg, var(--card-bg), #070a13);border:1px solid var(--card-border);text-align:center;border-radius:24px;max-width:900px;margin:100px auto;padding:64px 32px}.final-cta h2{letter-spacing:-.03em;margin-bottom:16px;font-size:2.6rem;font-weight:800}.final-cta p{color:var(--text-muted);max-width:600px;margin:0 auto 36px;font-size:1.15rem}footer{text-align:center;color:var(--text-subtle);border-top:1px solid #ffffff14;padding:50px 24px;font-size:.88rem}footer a{color:var(--text-muted);text-decoration:none;transition:color .2s}footer a:hover{color:var(--text-main)}@media (width<=860px){.hero h1{font-size:2.6rem}.window-body{grid-template-columns:1fr}.window-sidebar{display:none}.paper-sheet{width:100%;height:260px}.update-callout{grid-template-columns:1fr;padding:32px}.faq-grid{grid-template-columns:1fr}nav{display:none}}</style>
+</head>
+<body>
+
+  <div class="glow-sphere"></div>
+
+  <!-- Sticky Navbar -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <img src="./logo.svg" alt="Drawbot Studio Logo">
+        <span>Drawbot Studio</span>
+        <span class="brand-tag">v1.0.0</span>
+      </a>
+      <nav>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#drivers">Drivers</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download" class="btn btn-primary btn-sm">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="download">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Release v1.0.0 &bull; Windows 10 & 11 (64-bit) &bull; Auto-Update Supported
+      </div>
+
+      <h1>Precision CNC Pen Plotter Software</h1>
+      <p class="lead">
+        Drawbot Studio converts raster artwork into genuine single-stroke vector paths, optimizes toolpaths, and streams commands directly to GRBL plotters over USB.
+      </p>
+
+      <!-- Main Download Card -->
+      <div class="download-card">
+        <a href="https://github.com/Priyanshu-123-com/drawbot-app/releases/latest/download/Drawbot.Studio.Setup.1.0.0.exe" class="download-btn-main">
+          <div class="btn-text-block">
+            <div>Download Windows Setup (.exe)</div>
+            <div class="btn-subtitle">Recommended &bull; Includes Automatic Background Updates &bull; 122 MB</div>
+          </div>
+          <div class="btn-arrow">&darr;</div>
+        </a>
+
+        <div class="portable-link-row">
+          <span>Looking for zero-install?</span>
+          <a href="https://github.com/Priyanshu-123-com/drawbot-app/releases/latest/download/Drawbot.Studio.1.0.0.exe">
+            Download Portable Version (.exe) &bull; 110 MB
+          </a>
+        </div>
+      </div>
+
+      <div class="trust-badges">
+        <div class="trust-item">Verified Clean & Safe</div>
+        <div>&bull;</div>
+        <div class="trust-item">GRBL v1.1 Compatible</div>
+        <div>&bull;</div>
+        <div class="trust-item">Zero Setup Required</div>
+        <div>&bull;</div>
+        <div class="trust-item">Offline Ready</div>
+      </div>
+    </section>
+
+    <!-- Simulated Desktop Software Window Preview -->
+    <div class="mockup-container">
+      <div class="app-window">
+        <div class="window-titlebar">
+          <div class="window-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="window-title">Drawbot Studio - [Connected: COM3 @ 115200 baud]</div>
+          <div class="window-badge">Hardware: Ready</div>
+        </div>
+
+        <div class="window-body">
+          <!-- Sidebar Mockup -->
+          <div class="window-sidebar">
+            <div class="sidebar-block">
+              <div class="sidebar-label">Machine Telemetry</div>
+              <div class="sidebar-val">X: 142.50 mm</div>
+              <div class="sidebar-val">Y: 098.20 mm</div>
+              <div class="sidebar-val" style="color: #10b981;">Pen: DOWN (S120)</div>
+            </div>
+
+            <div class="sidebar-block">
+              <div class="sidebar-label">Tracing Algorithm</div>
+              <div style="font-weight: 600; margin-bottom: 4px;">Zhang-Suen Centerline</div>
+              <div style="font-size: 0.78rem; color: var(--text-subtle);">Douglas-Peucker: 0.5mm</div>
+            </div>
+
+            <div class="sidebar-block">
+              <div class="sidebar-label">Job Progress</div>
+              <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent);">58% Done</div>
+              <div style="font-size: 0.78rem; color: var(--text-subtle); margin-top: 4px;">Estimated: 8m 32s left</div>
+            </div>
+          </div>
+
+          <!-- Canvas Mockup with Plotted Artwork -->
+          <div class="window-canvas">
+            <div class="paper-sheet">
+              <!-- Geometric SVG Vector Art Mockup -->
+              <svg width="340" height="220" viewBox="0 0 340 220" fill="none" stroke="currentColor">
+                <!-- Pen-up rapid travels (dashed subtle blue) -->
+                <path d="M 20 20 L 70 50 M 160 50 L 210 30 M 270 90 L 170 170" stroke="#38bdf8" stroke-dasharray="3 3" stroke-width="1" opacity="0.6" />
+                <!-- Pen-down plotter lines (crisp dark ink) -->
+                <circle cx="170" cy="110" r="70" stroke="#1e293b" stroke-width="1.8" />
+                <circle cx="170" cy="110" r="50" stroke="#1e293b" stroke-width="1.8" />
+                <circle cx="170" cy="110" r="30" stroke="#1e293b" stroke-width="1.8" />
+                <polygon points="170,40 230,145 110,145" stroke="#ea580c" stroke-width="1.8" />
+                <polygon points="170,180 110,75 230,75" stroke="#ea580c" stroke-width="1.8" />
+                <!-- Active Pen Head Indicator -->
+                <circle cx="170" cy="40" r="5" fill="#f97316" />
+                <line x1="170" y1="40" x2="190" y2="20" stroke="#f97316" stroke-width="2" />
+              </svg>
+            </div>
+
+            <div class="canvas-hud">
+              <div>STATUS: <span style="color: #10b981;">STREAMING G-CODE</span></div>
+              <div>FEED RATE: 2400 mm/min</div>
+              <div>BUFFER: 127/127 BYTES</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison Table (Why Drawbot Studio?) -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-eyebrow">Comparison</div>
+        <h2 class="section-title">Why Drawbot Studio?</h2>
+        <p class="section-subtitle">
+          Unlike generic CNC mills or laser cutters, pen plotters require genuine centerline single-stroke vectors and precision pen lift control.
+        </p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Generic CNC / Laser Senders</th>
+              <th class="highlight-cell">Drawbot Studio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Vector Tracing</strong></td>
+              <td>Outlines both sides of lines (double strokes)</td>
+              <td class="highlight-cell">True single-line centerline skeletonization</td>
+            </tr>
+            <tr>
+              <td><strong>USB Streaming</strong></td>
+              <td>Requires separate third-party G-code senders</td>
+              <td class="highlight-cell">Direct native USB streaming built-in</td>
+            </tr>
+            <tr>
+              <td><strong>Software Updates</strong></td>
+              <td>Manual re-downloading and folder replacing</td>
+              <td class="highlight-cell">Automatic background software updates</td>
+            </tr>
+            <tr>
+              <td><strong>Pen Servo Control</strong></td>
+              <td>Manual G-code editing for M3 S pen angles</td>
+              <td class="highlight-cell">Visual servo angle and dwell calibration wizard</td>
+            </tr>
+            <tr>
+              <td><strong>Offline Simulation</strong></td>
+              <td>External simulation plugins required</td>
+              <td class="highlight-cell">Integrated virtual GRBL simulator</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- What It Does: 4-Step Pipeline -->
+    <section class="section" id="how-it-works">
+      <div class="section-header">
+        <div class="section-eyebrow">Workflow</div>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">
+          A seamless 4-step pipeline from raw raster pixels to drawn physical artwork.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-tag">Step 01</div>
+          <h3>Image Ingestion</h3>
+          <p>
+            Drop in any handwriting, sketch, technical drawing, or photo (PNG, JPG, WebP, SVG). Fine-tune threshold and contrast with live visual feedback.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-tag">Step 02</div>
+          <h3>Centerline Thinning</h3>
+          <p>
+            Morphological Zhang-Suen parallel thinning reduces solid strokes into pure 1-pixel centerline trajectories, eliminating double-drawn edges.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-tag">Step 03</div>
+          <h3>Toolpath Generation</h3>
+          <p>
+            Douglas-Peucker polygon reduction smooths jagged pixels into vector polylines. Set margins, scale, pen speed, and preview total drawing time.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-tag">Step 04</div>
+          <h3>USB Machine Plotting</h3>
+          <p>
+            Select your COM port and stream G-code directly to your plotter. Real-time pause, resume, feed hold, and emergency stop are always accessible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Auto-Update Callout -->
+    <section class="section">
+      <div class="update-callout">
+        <div>
+          <h2>Always Up-to-Date Automatically</h2>
+          <p>
+            Drawbot Studio features a built-in background update engine. When a new version is released, the software downloads it silently and prompts you to restart when you are ready. No broken dependencies or manual re-installations.
+          </p>
+        </div>
+        <div>
+          <span class="update-pill">Auto-Update Included</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features Grid -->
+    <section class="section" id="features">
+      <div class="section-header">
+        <div class="section-eyebrow">Capabilities</div>
+        <h2 class="section-title">Features Engineered for Plotters</h2>
+        <p class="section-subtitle">
+          Every tool you need to get the cleanest lines and most accurate drawings.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="feature-box">
+          <div class="feature-icon-bubble">1</div>
+          <h3>Native USB Serial Streaming</h3>
+          <p>
+            Connects directly to your microcontroller over USB with automatic COM port selection, 127-byte buffer synchronization, and status queries.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bubble">2</div>
+          <h3>Zhang-Suen Skeleton Tracing</h3>
+          <p>
+            Runs thinning algorithms inside a dedicated multi-threaded worker, ensuring the UI stays butter-smooth even with high-resolution inputs.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bubble">3</div>
+          <h3>Interactive Vector Layout</h3>
+          <p>
+            Scale, center, rotate, fit to page size, and fine-tune your work envelope with millimeter-accurate SVG visual previews.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bubble">4</div>
+          <h3>Pen Servo Calibration</h3>
+          <p>
+            Interactive wizard to test pen-up and pen-down servo positions (M3 S angles), servo travel speeds, and mechanical dwell delay times.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bubble">5</div>
+          <h3>Virtual Simulator</h3>
+          <p>
+            Practice and verify full jobs offline inside a built-in virtual GRBL simulator before putting a real pen onto paper.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bubble">6</div>
+          <h3>Teacher & Workshop Mode</h3>
+          <p>
+            Dedicated calibration presets and firmware inspection tools designed for classroom demonstrations, universities, and maker workshops.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hardware Compatibility -->
+    <section class="section" id="hardware">
+      <div class="section-header">
+        <div class="section-eyebrow">Compatibility</div>
+        <h2 class="section-title">Supported Hardware</h2>
+        <p class="section-subtitle">
+          Works seamlessly across open-source drawing robots and GRBL controller boards.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="hardware-card">
+          <h3>Controller Boards</h3>
+          <p>
+            Arduino Uno with CNC Shield v3, ESP32 GRBL boards, Makerbase MKS DLC32, Arduino Nano v3, and compatible ATmega328P clones.
+          </p>
+        </div>
+
+        <div class="hardware-card">
+          <h3>Machine Kinematics</h3>
+          <p>
+            AxiDraw-style CoreXY plotters, Cartesian T-bot and H-bot machines, standard 2-axis stepper tables, and scissor-arm drawing robots.
+          </p>
+        </div>
+
+        <div class="hardware-card">
+          <h3>Pen Mechanisms</h3>
+          <p>
+            Micro RC servos (SG90 / MG90S) controlled via spindle PWM (M3 S commands), as well as dedicated stepper Z-axes (G0/G1 Z).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- USB Drivers -->
+    <section class="section" id="drivers">
+      <div class="section-header">
+        <div class="section-eyebrow">Drivers</div>
+        <h2 class="section-title">USB Controller Drivers</h2>
+        <p class="section-subtitle">
+          If your computer does not automatically assign a COM port to your board, install the matching driver below:
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="driver-box">
+          <div>
+            <h4>CH340 / CH341 Driver</h4>
+            <p>Used by the vast majority of Arduino Uno clones and budget CNC shield drawing robot kits.</p>
+          </div>
+          <a href="https://www.wch-ic.com/downloads/CH341SER_EXE.html" target="_blank" class="btn btn-secondary btn-sm">Download CH340 Driver</a>
+        </div>
+
+        <div class="driver-box">
+          <div>
+            <h4>CP2102 / CP2104 Driver</h4>
+            <p>Common on modern ESP32 controllers, NodeMCU boards, and premium drawing robots.</p>
+          </div>
+          <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers" target="_blank" class="btn btn-secondary btn-sm">Download CP2102 Driver</a>
+        </div>
+
+        <div class="driver-box">
+          <div>
+            <h4>FTDI VCP Driver</h4>
+            <p>Standard on official Italian Arduino boards and industrial CNC communication interfaces.</p>
+          </div>
+          <a href="https://ftdichip.com/drivers/vcp-drivers/" target="_blank" class="btn btn-secondary btn-sm">Download FTDI Driver</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="section" id="faq">
+      <div class="section-header">
+        <div class="section-eyebrow">Answers</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about downloading and running Drawbot Studio.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>How do automatic software updates work?</h4>
+          <p>
+            When you install Drawbot Studio using the Windows Setup installer, the app automatically checks for new releases on startup. If an update is detected, it downloads in the background and prompts you to restart to apply it.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>Does Drawbot Studio require an internet connection?</h4>
+          <p>
+            No. Once downloaded and installed, Drawbot Studio runs completely offline. You can control your plotter, trace images, and generate G-code without any network connection.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>What if Windows SmartScreen shows a warning?</h4>
+          <p>
+            Because this is an independent open-source release, Windows may display a prompt stating "Windows protected your PC". Click <strong>More info</strong> and then click <strong>Run anyway</strong> to continue setup.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h4>What is the difference between Setup and Portable?</h4>
+          <p>
+            The <strong>Setup Installer</strong> installs Drawbot Studio to your system, adds Desktop & Start Menu shortcuts, and includes auto-updates. The <strong>Portable version</strong> runs immediately without installing anything.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Banner -->
+    <section class="final-cta">
+      <h2>Ready to start plotting?</h2>
+      <p>Download Drawbot Studio for Windows today and bring your digital drawings into the real world.</p>
+      <a href="https://github.com/Priyanshu-123-com/drawbot-app/releases/latest/download/Drawbot.Studio.Setup.1.0.0.exe" class="btn btn-primary" style="padding: 16px 36px; font-size: 1.1rem;">
+        Download for Windows (.exe)
+      </a>
+      <div style="margin-top: 16px; font-size: 0.85rem; color: var(--text-muted);">
+        Compatible with Windows 10 & 11 (64-bit) &bull; Free & Open Source
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;">
+      <div>
+        <strong>Drawbot Studio</strong> &bull; Open-source CNC pen plotter controller and vectorizer.
+      </div>
+      <div>
+        <a href="https://github.com/Priyanshu-123-com/cnc-plotter" target="_blank">GitHub Repository</a> &bull;
+        <a href="https://github.com/Priyanshu-123-com/drawbot-app/releases" target="_blank">Releases</a> &bull;
+        <a href="#drivers">Drivers</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
