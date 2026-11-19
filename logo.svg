@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" fill="none">
+  <!-- Rounded Orange Shield/Squircle -->
+  <rect width="40" height="40" rx="10" fill="#f97316"/>
+  <!-- Inner White Grid / Machine Frame -->
+  <rect x="8" y="8" width="24" height="24" rx="4" stroke="#ffffff" stroke-width="2" stroke-opacity="0.4" fill="none"/>
+  <!-- Precision Pen / Plotter Head -->
+  <path d="M26 12 L28 14 L18 24 L14 26 L16 22 Z" fill="#ffffff"/>
+  <!-- Plotter Pen Tip -->
+  <path d="M14 26 L12 28 L14 24 Z" fill="#ffedd5"/>
+  <!-- Toolpath trajectory line -->
+  <path d="M13 27 C 10 30, 8 20, 16 16" stroke="#fed7aa" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 2"/>
+  <circle cx="27" cy="13" r="1.5" fill="#ea580c"/>
+</svg>
